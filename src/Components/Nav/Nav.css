@@ -1,0 +1,126 @@
+.Nav_items {
+  height: 100px;
+  background-color: black;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding-right: 10px;
+}
+
+.Allnavitems {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  color: rgba(250, 235, 215, 0.751);
+  
+}
+
+.Allnavitems a,
+.Allnavitems .nav-item,
+.insta {
+  padding: 0 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.nav-item-list{
+  display: flex;
+}
+.insta {
+  position: relative;
+  height: 3.5em;
+  margin: 0 20px;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.len{
+  border: 2px solid red;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 5px;
+}
+.insta::after,
+.insta::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 40%;
+  background-color: black;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.insta::after {
+  top: -10px;
+  left: 3%;
+}
+
+.insta::before {
+  top: 80%;
+  left: 3%;
+}
+
+.insta:hover::before,
+.insta:hover::after {
+  transform: scale(0);
+}
+
+.shop {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 20px;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .Nav_items {
+    justify-content: space-between;
+    padding: 0 10px;
+    height: auto;
+  }
+
+  .Allnavitems {
+    flex-wrap: wrap;
+    
+    justify-content: center;
+  }
+
+  .Allnavitems a,
+  .Allnavitems .nav-item,
+  .insta {
+    padding: 10px;
+    font-size: 14px;
+    
+  }
+
+  .insta {
+    width: auto;
+    height: auto;
+    margin: 10px;
+  }
+
+  .shop {
+    margin: 10px;
+  }
+}

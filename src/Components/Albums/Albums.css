@@ -1,0 +1,137 @@
+.Heading_Generics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #777777;
+  padding: 30px;
+  height: 390px;
+}
+.Heading_Generics h1 {
+  color: #ffffff;
+  font-size: 100px;
+  margin-bottom: -160px;
+}
+.Heading_Generics h2 {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 30px;
+    max-width: 900px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    margin-left: 100px;
+    border-bottom: 1px solid #56ccf2;
+  }
+  
+}
+
+.All_tables_generics h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.All_tables_generics {
+  justify-content: space-between;
+}
+
+.Generic_Data {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding: 16px;
+
+  margin-left: 10%;
+}
+.Album_min,
+.Album_data,
+.Album_Ener {
+  width: 26%;
+}
+
+.Album_buttton {
+  margin-left: 260px;
+  padding: 10px;
+  width: 200px;
+  background-color: #56ccf2;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.The_Generic {
+  width: 100%;
+  height: 100px;
+  background-color: #56ccf2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .Heading_Generics {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .Heading_Generics h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .Heading_Generics h2 {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .All_tables_generics {
+    padding: 10px;
+  }
+
+  .Generic_Data {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .Album_min,
+  .Album_data,
+  .Album_Ener {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .Album_buttton {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Heading_Generics h1 {
+    font-size: 2rem;
+  }
+
+  .Heading_Generics h2 {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .Album_min,
+  .Album_data,
+  .Album_Ener {
+    font-size: 0.9rem;
+  }
+
+  .Album_buttton {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

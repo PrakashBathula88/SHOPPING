@@ -1,0 +1,146 @@
+.all_cart_items {
+  background-color: #fff;
+  border-radius: 8px;
+
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  height: auto;
+  width: 80%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cart_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart_table_header,
+.cart_table_row {
+  border-bottom: 1px solid #ddd;
+}
+
+.cart_table_header th,
+.cart_table_row td {
+  padding: 12px 8px;
+  text-align: left;
+}
+
+.cart_table_header th {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.cart_item_image {
+  max-width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.quantity_control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity_button {
+  background-color: #f0f0f0;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0 4px;
+  transition: background-color 0.3s;
+}
+
+.quantity_button:hover {
+  background-color: #e0e0e0;
+}
+
+.remove_button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove_button:hover {
+  background-color: #c0392b;
+}
+
+.no_items_message {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .all_cart_items {
+    width: 90%;
+    padding: 15px;
+    top: 15%;
+    height: auto;
+  }
+
+  .cart_table_header th,
+  .cart_table_row td {
+    padding: 10px 6px;
+    font-size: 14px;
+  }
+
+  .cart_item_image {
+    max-width: 60px;
+  }
+
+  .quantity_button {
+    padding: 6px;
+    margin: 0 2px;
+  }
+
+  .remove_button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .all_cart_items {
+    width: 95%;
+    padding: 10px;
+    top: 10%;
+    margin-top: 50px;
+  }
+
+  .cart_table_header th,
+  .cart_table_row td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+
+  .cart_item_image {
+    max-width: 50px;
+  }
+
+  .quantity_button {
+    padding: 5px;
+    margin: 0 2px;
+    font-size: 12px;
+  }
+
+  .remove_button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

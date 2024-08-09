@@ -1,0 +1,74 @@
+.Contact_name {
+  padding: 20px;
+  text-align: center;
+}
+
+.Contact_name h1 {
+  font-size: 32px;
+}
+
+.Contact_name p {
+  margin-top: 80px;
+  font-style: italic;
+}
+
+.All_contacts {
+  width: 40%;
+  padding: 20px;
+  margin: auto;
+}
+
+.Contact_page {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  border: 2px solid red;
+  box-shadow: 0px 2px 18px 2px red;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.Contact_page:hover{
+  box-shadow: 0px 2px 18px 12px green;
+}
+.Contact_page label {
+  display: block;
+  font-weight: bold;
+}
+
+.Contact_page input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.Email_contact {
+  grid-column: 1 / -1;
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-style: italic;
+  background-color: aqua;
+  color: green;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(0, 128, 0, 0.553);
+}
+
+.generix {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.56);
+  color: aqua;
+  margin-top: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
